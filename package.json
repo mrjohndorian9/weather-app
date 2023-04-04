@@ -1,0 +1,24 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrjohndorian9/weather-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrjohndorian9/weather-app/issues"
+  },
+  "homepage": "https://github.com/mrjohndorian9/weather-app#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}
