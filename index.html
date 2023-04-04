@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="output.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body class="font-sans min-h-screen flex justify-center items-center p-3">
+    <div
+      id="container"
+      class="border-black rounded-md shadow-sm shadow-black w-150 max-w-xl"
+    >
+      <div
+        class="p-2 flex-grow bg-slate-50 input-wrapper flex items-center rounded-xl"
+      >
+        <svg width="24" height="24" class="fill-none">
+          <path
+            d="m19 19-3.5-3.5"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <circle
+            cx="11"
+            cy="11"
+            r="6"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></circle>
+        </svg>
+        <form class="w-full">
+          <input
+            type="search"
+            placeholder="Search for cities"
+            class="text-xl p-2 h-10 w-full bg-slate-50 rounded-full focus:outline-none"
+          />
+        </form>
+      </div>
+      <div
+        id="content"
+        class="py-4 px-7 flex flex-col justify-center items-center hidden"
+      >
+        <p id="city" class="text-2xl uppercase"></p>
+        <p id="temp" class="text-5xl"></p>
+        <p id="condition" class="mt-4 text-2xl"></p>
+        <img src="" alt="" />
+        <div
+          id="additional-info"
+          class="w-full text-center font-bold uppercase text-xl flex justify-between gap-5"
+        >
+          <div id="feelslike">
+            <p class="text-xl">Feels Like</p>
+            <p id="feelslike__value" class="text-center text-xl"></p>
+          </div>
+          <div id="time">
+            <p>Local Time</p>
+            <p class="text-xl text-center" id="time__value">9:32</p>
+          </div>
+          <div id="wind">
+            <p>Wind</p>
+            <p class="text-xl text-center" id="wind__value"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
