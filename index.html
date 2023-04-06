@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link href="output.css" rel="stylesheet" />
-    <script src="script.js" defer></script>
+    <script src="script.js" type="module" defer></script>
     <title>Document</title>
   </head>
   <body class="font-sans min-h-screen flex justify-center items-center p-3">
@@ -47,33 +47,21 @@
             class="text-xl p-2 h-10 w-full bg-slate-50 rounded-full focus:outline-none"
           />
         </form>
+        <button
+          class="p-2 bg-blue-700 text-white rounded-md flex gap-2 hover:scale-105"
+        >
+          <span id="btn-c">C°</span>
+          /
+          <span id="btn-f" class="inactive">F°</span>
+        </button>
       </div>
       <div
         id="content"
         class="py-4 px-7 flex flex-col justify-center items-center hidden"
-      >
-        <p id="city" class="text-2xl uppercase"></p>
-        <p id="temp" class="text-5xl"></p>
-        <p id="condition" class="mt-4 text-2xl"></p>
-        <img src="" alt="" />
-        <div
-          id="additional-info"
-          class="w-full text-center font-bold uppercase text-xl flex justify-between gap-5"
-        >
-          <div id="feelslike">
-            <p class="text-xl">Feels Like</p>
-            <p id="feelslike__value" class="text-center text-xl"></p>
-          </div>
-          <div id="time">
-            <p>Local Time</p>
-            <p class="text-xl text-center" id="time__value">9:32</p>
-          </div>
-          <div id="wind">
-            <p>Wind</p>
-            <p class="text-xl text-center" id="wind__value"></p>
-          </div>
-        </div>
-      </div>
+      ></div>
+    </div>
+    <div class="loader">
+      <div></div>
     </div>
   </body>
 </html>
