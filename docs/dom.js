@@ -97,7 +97,7 @@ function DOM() {
     const url = icon.replace('64x64', '128x128');
     const timeText = data.location.localtime.split(' ')[1];
     const html = `
-	<p id="city" class="text-2xl uppercase">${name}, ${country}</p>
+	<p id="city" class="text-2xl uppercase text-center">${name}, ${country}</p>
 	<p id="cel" class="text-5xl ${celciusClass}">${tempC} C°</p>
 	<p id="fah" class="text-5xl ${fahrenheitClass}">${tempF} F°</p>
 	<p id="condition" class="mt-4 text-2xl">${condition}</p>
